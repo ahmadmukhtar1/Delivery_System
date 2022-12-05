@@ -52,18 +52,19 @@
             <h3 class="p1">Available Orders</h3>
         <table border="">
           <tr>
-            <th>First Name</th><th>Last Name</th><th>Order</th>
+            <th>First Name</th><th>Last Name</th><th>Registration No</th>
           </tr>
           {% for x in details %}
           <tr>
             <td>{{ x.FirstName }}<br></td>
             <td>{{ x.LastName }}</td>
-            <td>{{ x.FoodType }}</td>
+            <td>{{ x.Reg_No }}</td>
             <td> 
               <a href="{% url 'update' x.id %}" >Update</a></td>
           </tr>  
           {% endfor %}
         </table>
+
 
          <h3 class="p1">Standard Delivery Schedule</h3>
           <dl class="list-2">
